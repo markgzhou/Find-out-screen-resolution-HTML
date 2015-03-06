@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="description" content="What is your screen resolution? Find out instantly!" />
+<meta name="keywords" content="screen resolution, screen size, what's my screen resolution" />
+<title>What is my screen resolution</title>
+<style>
+	body {
+		background-image:url(bg.jpg);
+		background-repeat:repeat-x;
+		background-color:#dbf2f9;
+		text-align:center; /* Counteract to IE5/Win Hack */
+		margin-top:100px;
+		text-transform:uppercase;
+		}
+	h1 {font-size:20px;}
+	.mainContent {
+		margin:0px auto; /* Right and left margin widths set to "auto" */
+		text-align:center; /* Counteract to IE5/Win Hack */
+		border:0px;
+		width:400px;
+		}
+	.logo {
+		font-family:"Trebuchet MS", Arial, Verdana;
+		font-size:21px;
+		font-weight:lighter;
+		color:#333333;
+		width:360px;
+		padding:20px;
+		background-color:#FFFFFF;
+		text-align:center;
+		}
+	.logo span {
+		color:#cda608;
+		}
+	.resolution {
+		text-align:center;
+		width:340px;
+		padding:20px;
+		border:#FFFFFF solid 10px;
+		margin-top:10px;
+		font-family:"Trebuchet MS", Arial, Verdana;
+		color:#33cc00;
+		font-size:27px;
+		line-height:40px;
+		}
+	.resolution span{
+		color:#2b8e00;
+		display:block;
+		font-size:55px;
+		text-transform:lowercase;
+		}
+	.sk {
+		width:360px;
+		padding:20px;
+		background-color:#FFFFFF;
+		text-align:center;
+		margin-top:10px;
+		font-family:"Trebuchet MS", Arial, Verdana;
+		color:#666666;
+		font-size:13px;
+		line-height:15px;
+	}
+</style>
+
+</head>
+
+<body>
+
+	
+	<div class="mainContent">
+	<div class="logo">
+		<h1><span>what</span> is <span>my</span> screen <span>resolution</span></h1>
+		<p style="font-size:11px;">Sponsored by <a href="http://www.Mizzou1.com.com">Mizzou1</a> and <a href="http://www.WhoIsLong.com">WhoIsLong.com</a></p>
+	</div>
+	<div class="resolution">
+		You are using
+		<span id="resolutionNumber"></span>
+	</div>
+	<div class="sk">
+		<p>
+		The number above represents your screen / monitor resolution (pixels in width and height)
+		</p>
+		<p>
+    This micro web utility helps you to find your monitor/screen resolutions. There is no need to do the cumbersome
+     right click, properties, settings, etc to find out your screen resolution.
+		</p>
+		<p>
+		If you need to change your screen resolution in Windows, <a href="http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/display_change_screen_resolution.mspx?mfr=true">follow these instructions</a>.
+		</p>
+
+<br/>
+		<a href="http://www.mizzou1.com" title="Mizzou1"><img src="logo.png" alt="Mizzou1.com" border="0" title="Mizzou1" /></a><br />
+		Copyright &copy; Mizzou1.com.
+	</div>
+</div>
+
+<SCRIPT type="text/javascript">
+<!--
+
+height = screen.height;
+width = screen.width;
+
+res = document.getElementById ('resolutionNumber');
+res.innerHTML = width + " X " + height;
+
+if (res == null)
+{
+	alert ("hello");
+}
+
+//-->
+</SCRIPT>
+
+
+</body>
+</html>
